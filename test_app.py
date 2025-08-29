@@ -5,6 +5,9 @@ Unit tests for the Flask application.
 
 import pytest
 import json
+import werkzeug
+if not hasattr(werkzeug, "__version__"):
+    werkzeug.__version__ = "3.0.0"
 from app import app
 
 
